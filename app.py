@@ -23,7 +23,7 @@ st.sidebar.title("功能選單")
 option = st.sidebar.radio("選擇操作", ["上傳圖片", "模型預測（尚未接）"])
 
 # 主頁內容
-st.title("🖼️ 上傳皮膚病灶圖片")
+st.title("上傳皮膚病灶圖片")
 uploaded_file = st.file_uploader("請上傳一張圖片（格式：jpg、png、bmp...）", type=["jpg", "png", "bmp", "jpeg"])
 
 if uploaded_file is not None:
