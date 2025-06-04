@@ -28,7 +28,7 @@ uploaded_file = st.file_uploader("請上傳一張圖片（格式：jpg、png、b
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file).convert("RGB")
-    st.image(image, caption="上傳的圖片", use_column_width=True)
+    st.image(image, caption="上傳的圖片", use_container_width=True)
     
     if st.button("開始預測"):
         st.warning("⚠️ 尚未接上模型推論功能。")
